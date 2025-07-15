@@ -1,0 +1,99 @@
+/* === Fondo general === */
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* === Layout del login con logo al lado === */
+.login-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* === Imagen del logo a la izquierda (más grande) === */
+.login-logo-left {
+  width: 700px; /* Aumentado el tamaño */
+  height: auto;
+  object-fit: contain;
+}
+
+/* === Contenedor del formulario login === */
+section {
+  width: 320px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  border: 3px solid #3da9fc;
+  box-shadow: 0 8px 20px rgba(61, 169, 252, 0.3);
+  text-align: center;
+}
+
+/* === Título Login === */
+section h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #2c2a4a;
+}
+
+/* === Inputs === */
+section input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f7f7fa;
+  font-size: 16px;
+  color: #222;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+section input:focus {
+  border-color: #3da9fc;
+  background-color: white;
+}
+
+/* === Botón === */
+section button {
+  background-color: #3da9fc;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+section button:hover {
+  background-color: #2b7ac9;
+}
+
+/* === Error === */
+.error {
+  color: #e03e3e;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .login-layout {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .login-logo-left {
+    width: 120px;
+  }
+}
