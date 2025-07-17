@@ -16,11 +16,28 @@ body, html {
   flex-wrap: wrap;
 }
 
-/* === Imagen del logo a la izquierda (más grande) === */
+/* === Imagen del logo con efecto flotante === */
 .login-logo-left {
-  width: 700px; /* Aumentado el tamaño */
+  width: 550px;
   height: auto;
   object-fit: contain;
+  animation: floatLogo 3s ease-in-out infinite;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+}
+
+/* Animación para que flote suavemente */
+@keyframes floatLogo {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* === Contenedor del formulario login === */
