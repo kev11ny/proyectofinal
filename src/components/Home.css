@@ -21,7 +21,7 @@ html, body {
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-  /* 🎯 Fondo de pantalla completa */
+  /*  Fondo de pantalla completa */
   background-image: url('../assets/fono2av.jpg');
   background-size: cover;
   background-position: center;
